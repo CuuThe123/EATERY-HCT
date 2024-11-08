@@ -1,8 +1,8 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 
@@ -28,7 +28,6 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 9999;
     height: 70px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -95,15 +94,13 @@ html {
 
 #actions .item a:hover {
     background-color: #0056b3;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
-
 
 #actions .item a:active {
     background-color: #003f7f;
 }
-
 
 #banner {
     padding-top: 70px;
@@ -121,42 +118,42 @@ html {
 }
 
 #banner .box-left h2 {
-    font-size:48px;
-    margin-top:75px;
-    color:#fff;
+    font-size: 48px;
+    margin-top: 75px;
+    color: #fff;
 }
 
 #banner .box-left p {
-    color:#D0D0D0;
+    color: #D0D0D0;
 }
 
 #banner .box-left button {
     width: 191px;
     height: 40px;
-    margin-top:41px;
-    background:#1d1a1a;
-    border:none;
-    outline:none;
-    color:#fff;
+    margin-top: 41px;
+    background: #1d1a1a;
+    border: none;
+    outline: none;
+    color: #fff;
     font-weight: bold;
     border-radius: 20px;
-    transition:0.4s;
+    transition: 0.4s;
 }
 
 #banner .box-left button:hover {
-    background:orange;
+    background: orange;
 }
 
 #banner .box-right {
-    padding-left:200px;
+    padding-left: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #banner .box-right img {
-    margin:0px 10px;
-    animation :animation 3s infinite linear; 
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
 }
 
 #banner .box-right img:nth-child(1) {
@@ -171,9 +168,11 @@ html {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -221,7 +220,9 @@ html {
     display: block;
     margin: 0px auto;
     margin-top: 17px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
+    width: 256px;
+    height: 174px;
 }
 
 #list-products .item:hover img {
@@ -232,6 +233,11 @@ html {
     display: flex;
     margin: 0px auto;
     width: 50%;
+}
+
+#list-products .item .stars img {
+    width: auto;
+    height: auto;
 }
 
 #list-products .item .name {
@@ -283,12 +289,12 @@ html {
     display: flex;
     height: 322px;
     padding-top: 100px;
-    align-items: center; 
+    align-items: center;
 }
 
 #saleoff .box-left, #saleoff .box-right {
     width: 50%;
-    height: 100%; 
+    height: 100%;
 }
 
 #saleoff .box-left {
@@ -321,8 +327,7 @@ html {
     background-position: center;
     z-index: 0;
 }
-    
-/* Phần bố cục chính của comment */
+
 #comment {
     width: 1012px;
     height: 478px;
@@ -338,7 +343,6 @@ html {
     color: #626a67;
 }
 
-/* Phần nội dung của comment */
 #comment-body {
     position: relative;
     display: flex;
@@ -349,7 +353,6 @@ html {
     overflow: hidden;
 }
 
-/* Danh sách comment (chỉ hiển thị một comment tại một thời điểm) */
 #list-comment {
     display: flex;
     transition: 0.5s ease;
@@ -359,7 +362,7 @@ html {
 }
 
 #list-comment .item {
-    display: none; /* Ẩn tất cả các comment */
+    display: none;
     width: 100%;
     height: 100%;
     background: #362f2f;
@@ -368,12 +371,10 @@ html {
     white-space: normal;
 }
 
-/* Chỉ hiện comment có lớp "active" */
 #list-comment .item.active {
     display: block;
 }
 
-/* Avatar của khách hàng */
 #list-comment .item .avatar {
     text-align: center;
     margin-top: 13px;
@@ -385,7 +386,6 @@ html {
     height: 100px;
 }
 
-/* Các ngôi sao đánh giá */
 #list-comment .item .stars {
     display: flex;
     justify-content: center;
@@ -397,7 +397,6 @@ html {
     margin: 0 2px;
 }
 
-/* Tên khách hàng */
 #list-comment .item .name {
     text-align: center;
     font-weight: bold;
@@ -406,7 +405,6 @@ html {
     font-size: 18px;
 }
 
-/* Nội dung bình luận */
 #list-comment .item .text {
     padding: 20px 50px;
     color: #fff;
@@ -414,7 +412,6 @@ html {
     font-size: 16px;
 }
 
-/* Nút điều hướng "prev" và "next" */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -439,27 +436,10 @@ html {
     right: 10px;
 }
 
-/* Icon prev và next */
 .prev img, .next img {
     width: 20px;
     height: 20px;
 }
-/* 
-.avatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.avatar img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-} */
 
 #footer {
     width: 100%;
@@ -478,7 +458,7 @@ html {
 }
 
 #footer .logo img {
-    width: 150px; 
+    width: 150px;
     margin-bottom: 10px;
 }
 
@@ -507,7 +487,7 @@ html {
 }
 
 #footer .contact ul li img {
-    width: 20px; 
+    width: 20px;
     height: 20px;
     margin-right: 8px;
 }
@@ -528,4 +508,86 @@ html {
 #footer .apps img {
     width: 135px;
     margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1200px) {
+    #header {
+        padding: 10px 20px;
+    }
+
+    #banner {
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+
+    #banner .box-left, #banner .box-right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #wp-products {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #list-products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #list-products .item {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    #footer {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer .box {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #actions {
+        flex-direction: column;
+    }
+
+    #comment-body {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #banner {
+        padding: 20px;
+    }
+
+    #list-products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #saleoff {
+        flex-direction: column;
+    }
+
+    #footer {
+        padding: 10px;
+    }
 }

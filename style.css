@@ -19,7 +19,6 @@ html {
 #header {
     width: 100%;
     padding: 10px 30px;
-    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -510,72 +509,44 @@ html {
     margin-top: 10px;
 }
 
-/* Responsive Design */
-
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     #header {
         padding: 10px 20px;
     }
 
-    #banner {
-        flex-direction: column;
-        padding: 0px 30px;
+    #menu .item {
+        margin: 0px 10px;
     }
 
-    #banner .box-left, #banner .box-right {
-        width: 100%;
-        padding-left: 0;
+    #banner {
+        padding: 0px 60px;
     }
 
     #wp-products {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    #list-products {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #list-products .item {
-        width: 90%;
-        margin: 10px 0;
-    }
-
-    #footer {
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #footer .box {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    #actions {
-        flex-direction: column;
-    }
-
-    #comment-body {
-        flex-direction: column;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    #header {
-        padding: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-
+@media (max-width: 992px) {
     #menu {
-        flex-direction: column;
         gap: 10px;
     }
 
     #banner {
-        padding: 20px;
+        flex-direction: column;
+        padding: 0px 40px;
+        height: auto;
+    }
+
+    #banner .box-left, #banner .box-right {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #wp-products {
+        padding: 30px;
     }
 
     #list-products {
@@ -585,9 +556,77 @@ html {
 
     #saleoff {
         flex-direction: column;
+        padding-top: 50px;
     }
 
     #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: none; /* Ẩn menu trên màn hình nhỏ */
+    }
+
+    #header {
+        padding: 10px 15px;
+    }
+
+    #banner {
+        padding: 0px 20px;
+    }
+
+    #banner .box-left h2 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    #wp-products {
+        padding: 20px;
+    }
+
+    #list-products .item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #footer .box {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #header .logo img {
+        max-height: 40px;
+    }
+
+    #header {
         padding: 10px;
+    }
+
+    #banner .box-left h2 {
+        font-size: 24px;
+    }
+
+    #banner .box-left button {
+        width: 140px;
+        height: 35px;
+    }
+
+    #list-products .item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #footer .box {
+        padding: 0;
+        margin-bottom: 15px;
     }
 }

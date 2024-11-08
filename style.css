@@ -14,11 +14,13 @@ html {
     width: 100%;
     height: 100vh;
     color: #f42424;
+    margin: auto;
 }
 
 #header {
     width: 100%;
     padding: 10px 30px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -507,126 +509,4 @@ html {
 #footer .apps img {
     width: 135px;
     margin-top: 10px;
-}
-
-@media (max-width: 1200px) {
-    #header {
-        padding: 10px 20px;
-    }
-
-    #menu .item {
-        margin: 0px 10px;
-    }
-
-    #banner {
-        padding: 0px 60px;
-    }
-
-    #wp-products {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-
-@media (max-width: 992px) {
-    #menu {
-        gap: 10px;
-    }
-
-    #banner {
-        flex-direction: column;
-        padding: 0px 40px;
-        height: auto;
-    }
-
-    #banner .box-left, #banner .box-right {
-        width: 100%;
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    #wp-products {
-        padding: 30px;
-    }
-
-    #list-products {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #saleoff {
-        flex-direction: column;
-        padding-top: 50px;
-    }
-
-    #footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #footer .box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    #menu {
-        display: none; /* Ẩn menu trên màn hình nhỏ */
-    }
-
-    #header {
-        padding: 10px 15px;
-    }
-
-    #banner {
-        padding: 0px 20px;
-    }
-
-    #banner .box-left h2 {
-        font-size: 28px;
-        margin-top: 20px;
-    }
-
-    #wp-products {
-        padding: 20px;
-    }
-
-    #list-products .item {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    #footer .box {
-        padding: 0 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    #header .logo img {
-        max-height: 40px;
-    }
-
-    #header {
-        padding: 10px;
-    }
-
-    #banner .box-left h2 {
-        font-size: 24px;
-    }
-
-    #banner .box-left button {
-        width: 140px;
-        height: 35px;
-    }
-
-    #list-products .item {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    #footer .box {
-        padding: 0;
-        margin-bottom: 15px;
-    }
 }
